@@ -1,0 +1,36 @@
+User:
+One-to-One with Donor
+One-to-One with Organisation
+(A user can only be either a donor or an organisation, not both)
+
+
+Donor:
+One-to-One with User
+One-to-Many with Donations (one donor can make many donations)
+One-to-Many with Reviews (one donor can write many reviews)
+
+
+Organisation:
+One-to-One with User
+One-to-Many with Donations (one organisation can receive many donations)
+One-to-Many with Reviews (one organisation can receive many reviews)
+
+
+Donation:
+Many-to-One with Donor (many donations can come from one donor)
+Many-to-One with Organisation (many donations can go to one organisation)
+Review:
+Many-to-One with Donor (many reviews can be written by one donor)
+Many-to-One with Organisation (many reviews can be for one organisation)
+
+here is how donor and organisation are related
+
+Donor:
+Can donate to many Organizations (through Donations)
+Can review many Organizations (through Reviews)
+Can follow/subscribe to Organizations (could be a new feature)
+
+Organisation:
+Can receive donations from many Donors (through Donations)
+Can receive reviews from many Donors (through Reviews)
+Can have many followers/subscribers (could be a new feature)
